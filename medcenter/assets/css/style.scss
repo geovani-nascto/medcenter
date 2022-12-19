@@ -23,12 +23,46 @@ header{
         .logo{
             
             img{
-                width: 300px;
+                width: 250px;
             }
         }
 
         .menu{
+            nav{
 
+                ul{
+                    display: flex;
+
+                    li{
+                        list-style-type: none;
+                        padding: 15px;
+
+                        a{
+                            text-decoration: none;
+                            color: #757575;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .active,
+                    li:hover{
+                        background-color: #21819F;
+                        cursor: pointer;
+                        
+                        a{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
         }
     }
+}
+
+#banner{
+    height: 770px;
+    background-image: url(../img/banner3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

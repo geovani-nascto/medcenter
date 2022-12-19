@@ -36,6 +36,42 @@ header .container .logo, header .container .menu {
 }
 
 header .container .logo img {
-  width: 300px;
+  width: 250px;
+}
+
+header .container .menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .menu nav ul li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+header .container .menu nav ul li a {
+  text-decoration: none;
+  color: #757575;
+  text-transform: uppercase;
+}
+
+header .container .menu nav ul .active,
+header .container .menu nav ul li:hover {
+  background-color: #21819F;
+  cursor: pointer;
+}
+
+header .container .menu nav ul .active a,
+header .container .menu nav ul li:hover a {
+  color: #fff;
+}
+
+#banner {
+  height: 770px;
+  background-image: url(../img/banner3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
