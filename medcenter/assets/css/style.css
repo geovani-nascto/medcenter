@@ -144,16 +144,18 @@ header .container .menu nav ul li:hover a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 20px;
+  padding: 25px;
 }
 
 #banner .column .banner-options .option1 h1, #banner .column .banner-options .option2 h1, #banner .column .banner-options .option3 h1 {
   color: #fff;
+  font-size: 21px;
 }
 
 #banner .column .banner-options .option1 p, #banner .column .banner-options .option2 p, #banner .column .banner-options .option3 p {
   margin: 20px 0;
   color: #fff;
+  font-size: 15px;
 }
 
 #banner .column .banner-options .option1 a, #banner .column .banner-options .option2 a, #banner .column .banner-options .option3 a {
@@ -164,17 +166,120 @@ header .container .menu nav ul li:hover a {
   padding: 5px;
   text-decoration: none;
   font-size: 13px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #banner .column .banner-options .option1 {
   background-color: #259e9e;
 }
 
+#banner .column .banner-options .option1 a:hover {
+  background-color: #fff;
+  color: #259e9e;
+}
+
 #banner .column .banner-options .option2 {
   background-color: #21819F;
 }
 
+#banner .column .banner-options .option2 a:hover {
+  background-color: #fff;
+  color: #21819F;
+}
+
 #banner .column .banner-options .option3 {
   background-color: #165a6e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#banner .column .banner-options .option3 .hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#banner .column .banner-options .option3 .hours .day, #banner .column .banner-options .option3 .hours .hour {
+  margin: 5px 0;
+}
+
+#banner .column .banner-options .option3 .hours .day p, #banner .column .banner-options .option3 .hours .hour p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 1040px;
+}
+
+#content .container {
+  width: 990px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#content .container main .widget, #content .container aside .widget {
+  /*display: flex;
+                flex-direction: column;*/
+}
+
+#content .container main .widget .widget-title, #content .container aside .widget .widget-title {
+  margin: 30px 0 20px 0;
+}
+
+#content .container main .widget .widget-title .widget-title-text, #content .container aside .widget .widget-title .widget-title-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#content .container main .widget .widget-title .widget-title-box, #content .container aside .widget .widget-title .widget-title-box {
+  background-color: #21819F;
+  height: 3px;
+  width: 50px;
+  margin-top: 7px;
+}
+
+#content .container main {
+  background-color: darkred;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#content .container aside {
+  background-color: darkslateblue;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */

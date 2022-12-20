@@ -114,15 +114,17 @@ header{
 
             .option1, .option2, .option3{
                 flex: 1;
-                padding: 20px;
+                padding: 25px;
 
                 h1{
                     color: #fff;
+                    font-size: 21px;
                 }
 
                 p{
                     margin: 20px 0;
                     color: #fff;
+                    font-size: 15px;
                 }
 
                 a{
@@ -132,20 +134,100 @@ header{
                     padding: 5px;
                     text-decoration: none;
                     font-size: 13px;
+                    transition: 0.3s;
                 }
             }
 
             .option1{
                 background-color: #259e9e;
 
+                a:hover{
+                    background-color: #fff;
+                    color: #259e9e;
+                }
             }
 
             .option2{
                 background-color: #21819F;
+
+                a:hover{
+                    background-color: #fff;
+                    color: #21819F;
+                }
             }
 
             .option3{
                 background-color: #165a6e;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .hours{                    
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+                    .day, .hour{
+                        margin: 5px 0;
+
+                        p{
+                            margin: 10px 0;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    height: 1040px;
+
+    .container{
+        @include container();
+
+        main, aside{
+            .widget{
+                /*display: flex;
+                flex-direction: column;*/
+
+                .widget-title{
+                    margin: 30px 0 20px 0;
+
+                    .widget-title-text{
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+
+                    .widget-title-box{
+                        background-color: #21819F;
+                        height: 3px;
+                        width: 50px;
+                        margin-top: 7px;
+                    }
+                }
+            }
+        }
+
+        main{
+            background-color: darkred;
+            flex: 2;
+        }
+
+        aside{
+            background-color: darkslateblue;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            
+            .widget{
+
+                .widget-content{
+                    
+                }
             }
         }
     }
