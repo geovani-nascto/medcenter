@@ -458,6 +458,12 @@ footer .container .footer-options a .footer-opt3 p {
   font-size: 15px;
 }
 
+footer .container .footer-options a .footer-opt1 p::after,
+footer .container .footer-options a .footer-opt2 p::after,
+footer .container .footer-options a .footer-opt3 p::after {
+  content: '\2192';
+}
+
 footer .container .footer-options a .footer-opt1 {
   background-color: #259e9e;
 }

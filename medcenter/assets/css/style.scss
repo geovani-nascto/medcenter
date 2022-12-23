@@ -365,6 +365,10 @@ footer{
                         color: #fff;
                         font-size: 15px;
                     }
+
+                    p::after{
+                        content: '\2192';
+                    }
                 }
 
                 .footer-opt1{
