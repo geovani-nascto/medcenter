@@ -229,7 +229,7 @@ header .container .menu nav ul li:hover a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 1040px;
+  /*height: 1040px;*/
 }
 
 #content .container {
@@ -363,7 +363,6 @@ header .container .menu nav ul li:hover a {
           flex: 1;
   background-color: #21819F;
   padding: 65px;
-  border: 1px solid blue;
   margin: 20px 0;
 }
 
@@ -386,9 +385,138 @@ header .container .menu nav ul li:hover a {
   color: #fff;
   margin-right: 5px;
   padding: 5px;
+  border-radius: 2px;
 }
 
 #content .container aside .widget .support .sup p a {
   text-decoration: underline;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1e1e1e;
+}
+
+footer .container {
+  width: 990px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .container .footer-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .container .footer-options a {
+  display: block;
+  /*Pro link ser um bloco*/
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .container .footer-options a .footer-opt1,
+footer .container .footer-options a .footer-opt2,
+footer .container .footer-options a .footer-opt3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+  padding: 20px;
+}
+
+footer .container .footer-options a .footer-opt1 h1,
+footer .container .footer-options a .footer-opt2 h1,
+footer .container .footer-options a .footer-opt3 h1 {
+  color: #fff;
+  font-size: 21px;
+}
+
+footer .container .footer-options a .footer-opt1 p,
+footer .container .footer-options a .footer-opt2 p,
+footer .container .footer-options a .footer-opt3 p {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+
+footer .container .footer-options a .footer-opt1 {
+  background-color: #259e9e;
+}
+
+footer .container .footer-options a .footer-opt2 {
+  background-color: #21819F;
+}
+
+footer .container .footer-options a .footer-opt3 {
+  background-color: #165a6e;
+}
+
+footer .container .footer-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container .footer-infos .footer-contacts {
+  color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .container .footer-infos .footer-contacts .widget .widget-title {
+  margin: 30px 0 20px 0;
+}
+
+footer .container .footer-infos .footer-contacts .widget .widget-title .widget-title-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .container .footer-infos .footer-contacts .widget .widget-title .widget-title-box {
+  background-color: #21819F;
+  height: 3px;
+  width: 50px;
+  margin-top: 7px;
+}
+
+footer .container .footer-infos .footer-contacts .widget .widget-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .container .footer-copy {
+  color: #fff;
+  border-top: 1px solid #2c2c2c;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+footer .container .footer-copy span {
+  color: #9e9d9d;
 }
 /*# sourceMappingURL=style.css.map */
