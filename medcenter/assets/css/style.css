@@ -45,7 +45,11 @@ header .container .menu .menu-mobile {
   display: none;
   width: 40px;
   height: 40px;
+  /*Altura = 40 + Margin Top 40 + Margin Bottom 40 = 120px == 120px original do header*/
+  margin: 40px 0;
+  /*Sem isso o position absolute não funcionará corretamente*/
   margin-right: 20px;
+  cursor: pointer;
 }
 
 header .container .menu .menu-mobile .menu-bar {
@@ -629,8 +633,14 @@ footer .container .footer-copy span {
   .banner-slogan h1 {
     font-size: 2.8646vw;
   }
-  .banner-slogan h2 {
-    font-size: 1.0417vw;
+  /*#banner .column .banner-slogan h1 {
+        font-size: 4.78vw;
+    }*/
+  /*#banner .column .banner-slogan h2{
+        font-size: 1.0417vw;
+    }*/
+  #banner {
+    height: auto;
   }
   #banner .column .banner-options {
     -webkit-box-orient: vertical;
@@ -678,6 +688,11 @@ footer .container .footer-copy span {
         -ms-flex-direction: column;
             flex-direction: column;
     display: none;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
   }
   header .container .menu .menu-mobile {
     display: -webkit-box;
@@ -692,6 +707,15 @@ footer .container .footer-copy span {
   }
   #content .container aside .widget .flex .dept {
     margin-right: 25px;
+  }
+}
+
+@media (max-width: 440px) {
+  #banner .column .banner-slogan h1 {
+    font-size: 40px;
+  }
+  #banner .column .banner-slogan h2 {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

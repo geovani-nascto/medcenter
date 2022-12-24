@@ -42,7 +42,10 @@ header{
                 display: none;
                 width: 40px;
                 height: 40px;
+                /*Altura = 40 + Margin Top 40 + Margin Bottom 40 = 120px == 120px original do header*/
+                margin: 40px 0; /*Sem isso o position absolute não funcionará corretamente*/
                 margin-right: 20px;
+                cursor: pointer;
 
                 .menu-bar{
                     border-radius: 4px;
@@ -55,6 +58,7 @@ header{
 
                 ul{
                     display: flex;
+                    
 
                     li{
                         list-style-type: none;
@@ -539,10 +543,18 @@ footer{
         font-size: 2.8646vw;
     }
 
-    .banner-slogan h2{
+    /*#banner .column .banner-slogan h1 {
+        font-size: 4.78vw;
+    }*/
+
+    /*#banner .column .banner-slogan h2{
         font-size: 1.0417vw;
-    }
+    }*/
     
+    #banner{
+        height: auto;
+    }
+
     #banner .column .banner-options{
         flex-direction: column;
         height: auto;
@@ -583,6 +595,11 @@ footer{
     header .container .menu nav ul {
         flex-direction: column;
         display: none;
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
     }
 
     header .container .menu .menu-mobile {
@@ -593,5 +610,16 @@ footer{
 
     #content .container aside .widget .flex .dept{
         margin-right: 25px;
+    }
+}
+
+@media (max-width: 440px){
+
+    #banner .column .banner-slogan h1 {
+        font-size: 40px;
+    }
+
+    #banner .column .banner-slogan h2 {
+        font-size: 15px;
     }
 }
